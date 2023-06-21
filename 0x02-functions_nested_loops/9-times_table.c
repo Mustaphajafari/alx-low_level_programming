@@ -10,18 +10,17 @@ for (row = 0; row <= 9; row++)
 for (column = 0; column <= 9; column++)
 {
 result = row * column;
-if (result < 10)
-_putchar(' ');
-else
-_putchar('0' + (result / 10));
-_putchar('0' + (result % 10));
-if (column < 9)
+if (column != 0)
 {
 _putchar(',');
 _putchar(' ');
 }
-else
-_putchar('\n');
+if (result < 10 && column != 0)
+_putchar(' ');
+if (result >= 10)
+_putchar('0' + (result / 10));
+_putchar('0' + (result % 10));
 }
+_putchar('\n');
 }
 }
