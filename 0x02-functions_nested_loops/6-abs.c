@@ -1,9 +1,15 @@
 #include "main.h"
+int _abs(int c);
 /**
- *_abs - computes the abselute value of integer
- *@c: the integer to compute the abselute value
- *Return: the absolute value of integer
+ * main - Entry point
+ *
+ * Return: Always 0
  */
+int main(void)
+{
+_abs(-1);
+return (0);
+}
 int _abs(int c)
 {
 if (c < 0)
