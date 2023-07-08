@@ -1,22 +1,17 @@
 #include "main.h"
-int _abs(int c);
+
 /**
- * main - Entry point
+ * _abs - computes the absolute value of an integer
+ * @c: the number that we want to compute
  *
- * Return: Always 0
+ * Return: The absolute value of the integer
  */
-int main(void)
-{
-_abs(-1);
-return (0);
-}
+
 int _abs(int c)
 {
 if (c < 0)
-{
-int abs_val;
-abs_val = c * -1;
-return (abs_val);
-}
+
+return (-c);
+else
 return (c);
 }
