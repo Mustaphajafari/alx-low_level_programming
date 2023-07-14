@@ -2,7 +2,7 @@
 #include <stddef.h>
 #include <stdlib.h>
 /**
- * calloc - allocates memory for an array
+ * _calloc - allocates memory for an array
  * @nmemb: number of elements in the array
  * @size: the size of each element
  *
@@ -12,22 +12,25 @@
 
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
-void *ptr;
-unsigned int total_size;
+int i = 0, j = 0;
+char *ptr;
 
-if (nmemb == 0 || size ==0)
-return(NULL);
+if (nmemb == 0 || size == 0)
+return (NULL);
 
-total_size = nmemb * size;
+j = nmemb * size;
+ptr = malloc(j);
 
-ptr = malloc(total_size);
 
 if (ptr == NULL)
 return (NULL);
 
 
-for (unsigned int i = 0; i < total_size; i++)
-*((char *)ptr + i) = 0;
+while (i < j)
+{
+ptr[i] = 0;
+i++;
+}
 
 return (ptr);
 
