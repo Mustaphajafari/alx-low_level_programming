@@ -36,7 +36,7 @@ return (check_palindrome(x + 1, y - 1));
 
 
 /**
- * strlen - calculates the length of the string.
+ * _strlen - calculates the length of the string.
  * @s: the string
  *
  * Return: the length of the string
