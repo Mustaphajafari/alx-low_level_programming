@@ -29,7 +29,7 @@ name_length = strlen(name) + 1;
 owner_length = strlen(owner) + 1;
 
 name_copy = malloc(name_length *sizeof(char));
-owner_copy = malloc(owner_length * sizeof(char));
+owner_copy = malloc(owner_length *sizeof(char));
 if (name_copy == NULL || owner_copy == NULL)
 
 {
